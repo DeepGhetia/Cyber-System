@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cyber.FeedbackController">
+   <children>
+      <Label layoutX="23.0" layoutY="23.0" prefHeight="47.0" prefWidth="187.0" text="Feedback Form" textFill="WHITE" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="690.0">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="70.0" prefHeight="24.0" prefWidth="559.0" text="Please fill out this brief feedback form so we can ensure a top quality experience to all of our visitors." textFill="WHITE" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="318.0" />
+      <Label layoutX="23.0" layoutY="120.0" prefHeight="24.0" prefWidth="181.0" text="Is this your first visit to the cafe ?" textFill="WHITE" />
+      <JFXRadioButton fx:id="visit_yes" layoutX="38.0" layoutY="154.0" text="Yes" textFill="WHITE" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="817.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="visit_group" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="visit_no" layoutX="125.0" layoutY="154.0" text="No" textFill="WHITE" toggleGroup="$visit_group" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="731.0" />
+      <Label layoutX="23.0" layoutY="185.0" prefHeight="24.0" prefWidth="338.0" text="What is the likelihood that you will return to this cafe again?" textFill="WHITE" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="539.0" />
+      <JFXRadioButton fx:id="unlikely"  layoutX="48.0" layoutY="336.0" text="Unlikely to Return" textFill="WHITE" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="768.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="return_likelihood" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="slightly_likely" layoutX="48.0" layoutY="306.0" text="Slighltly Likely" textFill="WHITE" toggleGroup="$return_likelihood" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="768.0" />
+      <JFXRadioButton  fx:id="moderately_likely" layoutX="48.0" layoutY="279.0" text="Moderately Likely" textFill="WHITE" toggleGroup="$return_likelihood" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="768.0" />
+      <JFXRadioButton fx:id="very_likely" layoutX="48.0" layoutY="250.0" text="Very Likely" textFill="WHITE" toggleGroup="$return_likelihood" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="768.0" />
+      <JFXRadioButton fx:id="extremely_likely" layoutX="48.0" layoutY="224.0" text="Extremely Likely" textFill="WHITE" toggleGroup="$return_likelihood" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="768.0" />
+      <Label layoutX="23.0" layoutY="367.0" prefHeight="24.0" prefWidth="497.0" text="Please provide any additional comments or suggestions to help us meet your expectation!" textFill="WHITE" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="380.0" />
+      <JFXButton layoutX="626.0" layoutY="416.0" onAction="#feedback_received"  prefHeight="47.0" prefWidth="155.0" style="-fx-border-color: #bbb9b9;" text="Submit Feedback" textFill="WHITE" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="626.0" AnchorPane.rightAnchor="119.0" />
+      <JFXTextArea  fx:id="feedback_field"  focusColor="#fdfdff" layoutX="32.0" layoutY="396.0" prefHeight="74.0" prefWidth="451.0" promptText="Please give your valuable feedback here" style="-fx-background-color: white;" unFocusColor="#170707" />
+   </children>
+</AnchorPane>

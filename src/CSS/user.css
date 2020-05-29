@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Oct, 2019, 5:10:30 PM
+    Author     : hp
+*/
+
+.root
+{
+    -fx-background-color: black;
+}
+.button
+{
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+   
+}
+.dialog-pane{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+.dialog-pane .button { 
+    -fx-background-color: black; -fx-text-fill: whitesmoke; 
+}
